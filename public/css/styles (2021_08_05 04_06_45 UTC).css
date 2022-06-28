@@ -1,0 +1,193 @@
+@import url('http://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Miniver|Open+Sans:400i|Vollkorn|Yellowtail');
+
+	/*Documentation Comment*/
+/* apply a natural box layout model to all elements */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*RULES: Picky selector scheme; last edit will effect
+element*/
+/*border for all sides*/
+
+
+nav{
+
+}
+header {
+	/*check auto and max-width def*/
+	max-width: 960px;
+	margin: 2.0em auto 4.0em;
+}
+/*body { background: #ffffff url('tree.png') no-repeat right top; }*/
+body {
+	text-align: center;
+	padding-top: 20px;
+	color: white;
+	color: rgba(255,255,255,0.8);
+	background-color: #323232;
+	 background: url(http://www.jackie.io/iceharbor/bg-body.jpg) no-repeat center center fixed; 
+	-moz-background-size: cover;
+  	-webkit-background-size: cover;
+  	-o-background-size: cover;
+  background-size: cover;
+  /*respect given to Jackie.io*/
+}
+
+@media screen and (max-width:48em) {
+	.logo {
+		max-width: 100%;
+		height:  auto;
+	}
+
+	.specials {
+		width: 100%;
+		margin-top: 2.0em;
+		border-radius: 0px;
+	}
+	main { margin-top: 0; }
+}
+
+
+h1, h2 {
+  font-family: 'Fredericka the Great', cursive, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+/*need to mess with font-size for header later*/
+h1 {
+	font-size: 3em;
+	display: inline;
+}
+
+/*specials*/
+header p {	
+	font-family: 'Yellowtail', cursive, sans-serif;
+	display: inline;
+	padding: 30px;
+}
+
+.basic {
+	font-family: 'Vollkorn',cursive, sans-serif;
+	display: inline;
+	padding: 30px;
+}
+
+section h2 {
+	font-family: 'Yellowtail', cursive, sans-serif;
+	display: inline;
+	border-bottom-style: groove;
+
+
+}
+
+
+p {
+	
+	font-family: 'Vollkorn',cursive, sans-serif;
+	max-width: 960px;
+	padding: 30px;
+}
+/*border for left and right side*/
+.all {
+	border: 15px;
+	border-style: double;
+	margin:50px;
+	padding: 25px;
+}
+/*put borders on top and bottom*/
+
+h2.all {
+	position: relative;
+	max-width: 960px;
+
+	margin: 0 auto;
+}
+
+/*set bloack elements in line with picturwe */
+/*p {
+	font-family: 'Open Sans', sans-serif;
+}*/
+/*# for id '.' for classes*/
+/*Background, image, or color*/
+/*Max-width for content*/
+/*responsive navigation*/
+.one{
+	text-align: left;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    
+/*PADDING!!! The order when using a shortcut dealing with the box model is always
+TOP, RIGHT, BOTTOM, LEFT.*/
+}
+.two{
+	text-align: left;
+
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+}
+
+
+/*three or more modules with content + navbar*/
+/*two or more columns using flexbox*/
+section p {
+	max-width: 400px;
+
+
+}
+/*border for top and bottom*/
+footer {
+	padding-bottom: 5%;
+	margin-top: 30px;
+}
+/*Sketch/Preplan*/
+/*professional design, typography, color choice*/
+/*functioning code*/
+/*Used media queries to adjust content*/
+
+
+#bottom {
+	
+	display: flex;
+	flexbox: wrap;
+	justify-content: center;
+	max-width: 960px;
+/*	margin: 6.0em auto 0;*/
+}
+
+footer i {
+	margin: 0 30px 0 0;
+}
+
+footer a {
+	position: relative;
+	bottom: 20px;
+	right: 20px;
+}
+
+footer a {
+	color: black;
+	opacity: 0.85;
+}
+
+footer a:hover {
+	color: #F2F1EF;
+}
+
+#sitemap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 6.0em auto 0;
+}

@@ -1,0 +1,39 @@
+*************************************************
+ * Site Name: Student Central on Union
+ * 
+ * Description: Print stylesheet
+ * Author: IU Communications 
+ * Author URI: http://communications.iu.edu
+ ************************************************/
+
+/****************************************
+ * Imports
+ ****************************************/
+
+@import url("../_global/css/print.css");
+
+
+/****************************************
+ * Hidden Elements
+ ****************************************/
+ 
+#identity .search, #sitesearch, #search-menu, #nav-subsite, #subsite-section-title .menu, #calendar .nav-calendar, #calendar .nav-calendar-intro, .tabs .tabs-header {
+    display: none;  
+}
+
+
+/****************************************
+ * Reset Javascript Styles
+ ****************************************/
+
+#calendar ul.calendar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#calendar ul.calendar li {
+    height: 100% !important;    
+}
+.tabs .tab-content {
+    display: block !important;  
+}
